@@ -4,45 +4,213 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylse.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <div id="outer">
+
+    <!-- destination time -->
+
+    <div class="outer">
 
         <div class="row">
-
+            <div class="header-label">
+                MONTH
+            </div>
+            <div class="header-label">
+                DAY
+            </div>
+            <div class="header-label">
+                YEAR
+            </div>
+            <div class="header-label">
+                HOUR
+            </div>
+            <div class="header-label">
+                MIN
+            </div>
         </div>
         <div class="row">
             <div class="display month">
-                <p class="desitination">nov</p>
+                <p class="destination time">nov</p>
             </div>
+
             <div class="display">
-                <p class="desitination">05</p>
+                <p class="destination time">05</p>
                 <p class="number-back">88</p>
             </div>
+
             <div class="display">
-                <p class="desitination">1955</p>
+                <p class="destination time">1955</p>
                 <p class="number-back">8888</p>
             </div>
-            <div class="display">
-                <p class="desitination">06</p>
-                <p class="number-back">88</p>
-            </div>
+
             <div class="led-time-separator-container">
-                <div class="ampm-label">AM</div>
-                <div class="led on"></div>
-                <div class="led off"></div>
+                <div class="ampm-label am-label">AM</div>
+                <div class="led led-destination-on"></div>
+                <div class="ampm-label pm-label">PM</div>
+                <div class="led led-destination"></div>
             </div>
+
             <div class="display">
-                <p class="desitination">00</p>
+                <p class="destination time">06</p>
                 <p class="number-back">88</p>
             </div>
-            <div class="led">
+
+            <div class="led-unit-separator-container">
+                <div class="led led-destination-on"></div>
+                <div class="led led-destination-on"></div>
+                <div class="led led-destination"></div>
+                <div class="led led-destination"></div>
+            </div>
+
+            <div class="display">
+                <p class="destination time">00</p>
+                <p class="number-back">88</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="footer-label">
+                DESTINATION TIME
+            </div>
+        </div>
+
+    </div>
+
+    <!-- present time -->
+
+    <div class="outer">
+
+        <div class="row">
+            <div class="header-label">
+                MONTH
+            </div>
+            <div class="header-label">
+                DAY
+            </div>
+            <div class="header-label">
+                YEAR
+            </div>
+            <div class="header-label">
+                HOUR
+            </div>
+            <div class="header-label">
+                MIN
             </div>
         </div>
         <div class="row">
+            <div class="display month">
+                <p class="present time">OCT</p>
+            </div>
 
+            <div class="display">
+                <p class="present time">21</p>
+                <p class="number-back">88</p>
+            </div>
+
+            <div class="display">
+                <p class="present time">1985</p>
+                <p class="number-back">8888</p>
+            </div>
+
+            <div class="led-time-separator-container">
+                <div class="ampm-label am-label">AM</div>
+                <div class="led led-present-on"></div>
+                <div class="ampm-label pm-label">PM</div>
+                <div class="led led-present"></div>
+            </div>
+
+            <div class="display">
+                <p class="present time">01</p>
+                <p class="number-back">88</p>
+            </div>
+
+            <div class="led-unit-separator-container">
+                <div class="led led-present-on"></div>
+                <div class="led led-present-on"></div>
+                <div class="led led-present"></div>
+                <div class="led led-present"></div>
+            </div>
+
+            <div class="display">
+                <p class="present time">22</p>
+                <p class="number-back">88</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="footer-label">
+                PRESENT TIME
+            </div>
+        </div>
+    </div>
+
+    <!-- departed time -->
+
+    <div class="outer">
+
+        <div class="row">
+            <div class="header-label">
+                MONTH
+            </div>
+            <div class="header-label">
+                DAY
+            </div>
+            <div class="header-label">
+                YEAR
+            </div>
+            <div class="header-label">
+                HOUR
+            </div>
+            <div class="header-label">
+                MIN
+            </div>
+        </div>
+        <div class="row">
+            <div class="display month">
+                <p class="departed time">OCT</p>
+            </div>
+
+            <div class="display">
+                <p class="departed time">21</p>
+                <p class="number-back">88</p>
+            </div>
+
+            <div class="display">
+                <p class="departed time">1985</p>
+                <p class="number-back">8888</p>
+            </div>
+
+            <div class="led-time-separator-container">
+                <div class="ampm-label am-label">AM</div>
+                <div class="led led-departed-on"></div>
+                <div class="ampm-label pm-label">PM</div>
+                <div class="led led-departed"></div>
+            </div>
+
+            <div class="display">
+                <p class="departed time">01</p>
+                <p class="number-back">88</p>
+            </div>
+
+            <div class="led-unit-separator-container">
+                <div class="led led-departed-on"></div>
+                <div class="led led-departed-on"></div>
+                <div class="led led-departed"></div>
+                <div class="led led-departed"></div>
+            </div>
+
+            <div class="display">
+                <p class="departed time">20</p>
+                <p class="number-back">88</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="footer-label">
+                LAST TIME DEPARTED
+            </div>
         </div>
     </div>
     
