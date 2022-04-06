@@ -21,12 +21,12 @@ body {
 }
 
 .outer {
-  min-height: 200px;
+  min-height: 180px;
   background: #505662;
   background: linear-gradient(74deg, #505662 13%, #98a3ba 24%, #505662 37%, #676f7e 47%, #3a3f47 62%, #626978 79%, #505662 100%);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 20px;
+  padding: 16px;
   border: 1px solid #000000;
   -webkit-box-shadow: inset 3px 2px 3px rgba(255, 255, 255, 0.4), inset -2px -2px 2px rgba(0, 0, 0, 0.4);
           box-shadow: inset 3px 2px 3px rgba(255, 255, 255, 0.4), inset -2px -2px 2px rgba(0, 0, 0, 0.4);
@@ -53,19 +53,19 @@ body {
   border-top: 1px solid rgba(255, 208, 208, 0.435);
   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.664);
           box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.664);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .header-label:nth-child(1) {
   margin-left: 40px;
-  -webkit-transform: rotate(3deg);
-          transform: rotate(3deg);
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
 }
 
 .header-label:nth-child(2) {
   margin-left: 16px;
-  -webkit-transform: rotate(2deg);
-          transform: rotate(2deg);
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
 }
 
 .header-label:nth-child(3) {
@@ -82,6 +82,16 @@ body {
   margin-right: 30px;
 }
 
+#present .row .header-label:nth-child(1) {
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+
+#present .row .header-label:nth-child(5) {
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+}
+
 .footer-label {
   background-color: black;
   color: rgba(233, 220, 220, 0.653);
@@ -93,7 +103,7 @@ body {
   border-top: 1px solid rgba(255, 208, 208, 0.435);
   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.664);
           box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.664);
-  margin: 20px auto 0px auto;
+  margin: 10px auto 0px auto;
 }
 
 .display {
@@ -107,7 +117,6 @@ body {
   margin: 0px 16px;
   text-align: center;
   font-weight: lighter;
-  font-style: italic;
   font-family: 'Digital Numbers', sans-serif;
   letter-spacing: 3px;
   color: #ffdbe0;
@@ -122,6 +131,8 @@ body {
   -webkit-animation: text-flicker-in-glow 0.1s linear infinite;
           animation: text-flicker-in-glow 0.1s linear infinite;
   z-index: 5;
+  -webkit-transform: skewX(-10deg);
+          transform: skewX(-10deg);
 }
 
 .display .number-back {
@@ -129,6 +140,8 @@ body {
   color: #4e4e4e;
   top: -36px;
   z-index: 1;
+  -webkit-transform: skewX(-10deg);
+          transform: skewX(-10deg);
 }
 
 .display .destination {
@@ -140,7 +153,15 @@ body {
 }
 
 .display .departed {
-  text-shadow: 0 0 1px #FFF, 0 0 5px white, 0 0 15px rgba(255, 255, 255, 0.418), 0 0 20px #d88005, 0 0 20px #d88005, 0 0 20px #d88005;
+  text-shadow: 0 0 1px #FFF, 0 0 5px white, 0 0 15px rgba(255, 255, 255, 0.418), 0 0 20px #a86200, 0 0 20px #a86200, 0 0 20px #a86200;
+}
+
+#present .row .display {
+  border-bottom: 2px solid #0c7b0c;
+}
+
+#departed .row .display {
+  border-bottom: 2px solid #a86200;
 }
 
 .led-time-separator-container {
@@ -223,7 +244,7 @@ body {
 
 .led-present {
   background: #0c7b0c;
-  background: radial-gradient(circle, #15d815 2%, #0c7b0c 51%, #280202 100%);
+  background: radial-gradient(circle, #15d815 2%, #074d07 51%, #280202 100%);
 }
 
 .led-present-on {
@@ -233,14 +254,14 @@ body {
 }
 
 .led-departed {
-  background: #d88005;
-  background: radial-gradient(circle, #fbb048 2%, #d88005 51%, #280202 100%);
+  background: black;
+  background: radial-gradient(circle, #ff9b0f 2%, #754400, #280202 100%);
 }
 
 .led-departed-on {
-  background: radial-gradient(circle, white 63%, #d88005 90%);
-  -webkit-box-shadow: 0 0 2px #FFF, 0 0 4px rgba(255, 255, 255, 0.505), 0 0 6px #d88005, 0 0 10px #d88005, 0 0 10px #d88005;
-          box-shadow: 0 0 2px #FFF, 0 0 4px rgba(255, 255, 255, 0.505), 0 0 6px #d88005, 0 0 10px #d88005, 0 0 10px #d88005;
+  background: radial-gradient(circle, white 63%, #a86200 90%);
+  -webkit-box-shadow: 0 0 2px #FFF, 0 0 4px rgba(255, 255, 255, 0.505), 0 0 6px #a86200, 0 0 10px #a86200, 0 0 10px #a86200;
+          box-shadow: 0 0 2px #FFF, 0 0 4px rgba(255, 255, 255, 0.505), 0 0 6px #a86200, 0 0 10px #a86200, 0 0 10px #a86200;
 }
 
 .ampm-label {

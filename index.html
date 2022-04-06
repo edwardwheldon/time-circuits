@@ -11,7 +11,7 @@
 
     <!-- destination time -->
 
-    <div class="outer">
+    <div id="destination" class="outer">
 
         <div class="row">
             <div class="header-label">
@@ -80,7 +80,7 @@
 
     <!-- present time -->
 
-    <div class="outer">
+    <div id="present" class="outer">
 
         <div class="row">
             <div class="header-label">
@@ -101,28 +101,28 @@
         </div>
         <div class="row">
             <div class="display month">
-                <p class="present time">OCT</p>
+                <p id="present-month" class="present time">OCT</p>
             </div>
 
             <div class="display">
-                <p class="present time">21</p>
+                <p id="present-day" class="present time">21</p>
                 <p class="number-back">88</p>
             </div>
 
             <div class="display">
-                <p class="present time">1985</p>
+                <p id="present-year" class="present time">1985</p>
                 <p class="number-back">8888</p>
             </div>
 
             <div class="led-time-separator-container">
                 <div class="ampm-label am-label">AM</div>
-                <div class="led led-present-on"></div>
+                <div id="present-am-led" class="led led-present"></div>
                 <div class="ampm-label pm-label">PM</div>
-                <div class="led led-present"></div>
+                <div id="present-pm-led" class="led led-present"></div>
             </div>
 
             <div class="display">
-                <p class="present time">01</p>
+                <p id="present-hour" class="present time">01</p>
                 <p class="number-back">88</p>
             </div>
 
@@ -133,8 +133,8 @@
                 <div class="led led-present"></div>
             </div>
 
-            <div class="display">
-                <p class="present time">22</p>
+            <div class="present display">
+                <p id="present-minute" class="present time">22</p>
                 <p class="number-back">88</p>
             </div>
 
@@ -148,7 +148,7 @@
 
     <!-- departed time -->
 
-    <div class="outer">
+    <div id="departed" class="outer">
 
         <div class="row">
             <div class="header-label">
@@ -213,6 +213,6 @@
             </div>
         </div>
     </div>
-    
+    <script src="app.js"></script>
 </body>
 </html>
